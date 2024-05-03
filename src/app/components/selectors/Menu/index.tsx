@@ -72,9 +72,9 @@ export const MenuCustom = (props: Partial<MenuCustomProps>) => {
             >
                 <Flex align='center' onClick={handleClick} style={{cursor: "pointer"}}>
                     {image ? (
-                        <img src={URL.createObjectURL(image)} alt="upload image" className="img-display-after"/>
+                        <img style={{ width: "10px", height: "10px" }} src={URL.createObjectURL(image)} alt="upload image" className="img-display-after"/>
                     ) : (
-                        <img src='../../logo.svg' alt="upload image" className="img-display-before"/>
+                        <img style={{ width: "10px", height: "10px" }} src='../../logo.svg' alt="upload image" className="img-display-before"/>
                     )}
 
                     <input

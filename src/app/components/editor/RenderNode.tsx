@@ -115,7 +115,7 @@ export const RenderNode = ({ render }) => {
               <h2 className="flex-1 mr-4">{name}</h2>
               {moveable ? (
                 <Btn className="mr-2 cursor-move" ref={drag}>
-                  <Move />
+                  <img style={{ width: "10px", height: "10px" }} src={Move} alt="Move" />
                 </Btn>
               ) : null}
               {id !== ROOT_NODE && (
@@ -125,7 +125,7 @@ export const RenderNode = ({ render }) => {
                     actions.selectNode(parent);
                   }}
                 >
-                  <ArrowUp />
+                  <img style={{ width: "10px", height: "10px" }} src={ArrowUp} alt="ArrowUp" />
                 </Btn>
               )}
               {deletable ? (
@@ -136,7 +136,7 @@ export const RenderNode = ({ render }) => {
                     actions.delete(id);
                   }}
                 >
-                  <Delete />
+                  <img style={{ width: "10px", height: "10px" }} src={Delete} alt="Delete" />
                 </Btn>
               ) : null}
             </IndicatorDiv>,

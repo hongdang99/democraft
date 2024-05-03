@@ -82,12 +82,12 @@ export const Header = () => {
           <Flex className="flex-1 flex" align="center">
             <Tooltip title="Undo" placement="bottom">
               <Item disabled={!canUndo} onClick={() => actions.history.undo()}>
-                <UndoSvg />
+                <img style={{ width: "10px", height: "10px" }} src={UndoSvg} alt="UndoSvg" />
               </Item>
             </Tooltip>
             <Tooltip title="Redo" placement="bottom">
               <Item disabled={!canRedo} onClick={() => actions.history.redo()}>
-                <RedoSvg />
+                <img style={{ width: "10px", height: "10px" }} src={RedoSvg} alt="RedoSvg" />
               </Item>
             </Tooltip>
               <Tooltip title="Copy State" placement="bottom">
@@ -98,7 +98,7 @@ export const Header = () => {
                   }}>COPY CURRENT STATE</Button>
               </Tooltip>
               <Tooltip title="Copy State" placement="bottom">
-                  <Button  onClick={showModal}>LOAD STATE</Button>
+                  <Button onClick={showModal}>LOAD STATE</Button>
               </Tooltip>
               <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                   <TextArea onChange={(e) => setStateToLoad(e.target.value)} rows={4} />
@@ -118,7 +118,7 @@ export const Header = () => {
               actions.setOptions((options) => (options.enabled = !enabled));
             }}
           >
-            {enabled ? <Checkmark /> : <Customize />}
+            {enabled ? <img style={{ width: "10px", height: "10px" }} src={Checkmark} alt="Checkmark" /> : <img style={{ width: "10px", height: "10px" }} src={Customize} alt="Customize" />}
             {enabled ? 'Finish Editing' : 'Edit'}
           </Btn>
         </div>

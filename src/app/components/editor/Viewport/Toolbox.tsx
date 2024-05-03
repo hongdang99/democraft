@@ -65,7 +65,7 @@ export const Toolbox = () => {
         >
           <Tooltip title="Container" placement="right">
             <Item className="m-2 pb-2 cursor-pointer block" move>
-              <SquareSvg/>
+              <img style={{ width: "10px", height: "10px" }} src={SquareSvg} alt="SquareSvg" />
             </Item>
           </Tooltip>
         </div>
@@ -76,21 +76,21 @@ export const Toolbox = () => {
         >
           <Tooltip title="Text" placement="right">
             <Item className="m-2 pb-2 cursor-pointer block" move>
-              <TypeSvg/>
+              <img style={{ width: "10px", height: "10px" }} src={TypeSvg} alt="TypeSvg" />
             </Item>
           </Tooltip>
         </div>
         <div ref={(ref) => create(ref, <Button/>)}>
           <Tooltip title="Button" placement="right">
             <Item className="m-2 pb-2 cursor-pointer block" move>
-              <ButtonSvg/>
+              <img style={{ width: "10px", height: "10px" }} src={ButtonSvg} alt="ButtonSvg" />
             </Item>
           </Tooltip>
         </div>
         <div ref={(ref) => create(ref, <Video/>)}>
           <Tooltip title="Video" placement="right">
             <Item className="m-2 pb-2 cursor-pointer block" move>
-              <YoutubeSvg/>
+              <img style={{ width: "10px", height: "10px" }} src={YoutubeSvg} alt="YoutubeSvg" />
             </Item>
           </Tooltip>
         </div>
